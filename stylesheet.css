@@ -1,3 +1,18 @@
+
+
+/* #region heading */
+.container {
+
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 8fr 1fr;
+  grid-template-areas:
+  ". navbar . main ."  ;
+}
+
+main {
+  grid-area: main;
+}
+
 h1 {
   text-align: center;
   font-size: 50px;
@@ -6,12 +21,14 @@ h1 {
   font-weight: 300;
 }
 
-p {
+.underoverskrift {
   text-align: center;
   font-size: 15px;
   color: black;
   margin-bottom: 20px;
 }
+
+/* #endregion */
 
 h2 {
   text-align: left;
@@ -20,19 +37,83 @@ h2 {
   font-weight: 100;
   font-family: Gill Sans, sans-serif;
 }
+
 .navbar {
-border: 1px solid #000;
-width: 30%;
+  border: 1px solid #000;
+  grid-area: navbar;
+  
+
 }
+
 .box {
+  padding: 4px;
+ 
+
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+/* #region farve */
+
+.colourbox {
+
+  height: 150px;
+  width: 150px;
   border: 2px solid black;
+  box-shadow: 8px 10px 32px -11px rgba(0,0,0,0.93);
 
 }
-.bluebox {
+
+.yellow {
+  background-color: yellow;
+}
+.blue {
   background-color: blue;
+}
+.red {
+  background-color: red;
+}
+
+/* #endregion */
+
+.tekst {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
-figure {
-  height: 300px;
-  width: 300px; 
+
+.btn {
+  padding: 10px 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
 }
+
+.fa-login {
+
+  background-color: blue;
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
+.deltag {
+
+  background-color: black;
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
+.deltager {
+
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  border-radius: 10px;
+}
+
+#facbook_login_knap:hover {
+  opacity: .8;
+  cursor: pointer;
+}
+
