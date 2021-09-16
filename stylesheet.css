@@ -24,3 +24,15 @@ h2 {
 border: 1px solid #000;
 width: 30%;
 }
+.box {
+  border: 2px solid black;
+
+}
+.bluebox {
+  background-color: blue;
+
+}
+figure {
+  height: 300px;
+  width: 300px; 
+}
