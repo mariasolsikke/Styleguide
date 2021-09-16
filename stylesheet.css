@@ -1,0 +1,26 @@
+h1 {
+  text-align: center;
+  font-size: 50px;
+  color: Black;
+  font-family: Gill Sans, sans-serif;
+  font-weight: 300;
+}
+
+p {
+  text-align: center;
+  font-size: 15px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: left;
+  font-size: 25px;
+  color: Black;
+  font-weight: 100;
+  font-family: Gill Sans, sans-serif;
+}
+.navbar {
+border: 1px solid #000;
+width: 30%;
+}
