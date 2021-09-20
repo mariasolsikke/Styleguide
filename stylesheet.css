@@ -64,14 +64,23 @@ h2 {
 
 }
 
-.yellow {
-  background-color: yellow;
+.lightblue {
+  background-color: #E3F1F0;
 }
 .blue {
-  background-color: blue;
+  background-color: #00454E;
+}
+.yellow {
+  background-color: #FAE256;
+}
+.fbblue {
+  background-color: #4267B2;
+}
+.pastelmint {
+  background-color: #AAC6C7;
 }
 .red {
-  background-color: red;
+  background-color: #BC2222;
 }
 
 /* #endregion */
