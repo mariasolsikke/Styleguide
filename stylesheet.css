@@ -1,17 +1,16 @@
+@import url("https://use.typekit.net/afz5wtp.css");
+
 * {
 
   padding: 0;
+  font-family: proxima-nova, sans-serif;
 
 }
 
-/*
-@media screen and (min-width: 768px)
- and (max-width: 1024px) {
-  body {
-    background-color: white;
-  }
+.text-center {
+  text-align: center;
+
 }
- */
 
 /* #region heading */
 main {
@@ -24,7 +23,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr 8fr 1fr;
   grid-template-areas:
-  ". navbar . main ."  ;
+  ". navbar . main ." ;
 }
 
 main {
@@ -59,7 +58,6 @@ h2 {
 .navbar {
   grid-area: navbar;
 
-
 }
 
 .box {
@@ -67,7 +65,7 @@ h2 {
 
   display: flex;
 
-  justify-content: space-evenly;
+  justify-content: space-around;
 
 }
 
@@ -114,44 +112,13 @@ h2 {
 
 /* #endregion */
 
+
+
 .tekst {
   display: flex;
   align-items: center;
   justify-content: center;
 
-}
-
-.btn {
-  padding: 10px 50px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  cursor: pointer;
-}
-
-.fa-login {
-
-  background-color: #4267B2;
-  border: none;
-  color: white;
-  border-radius: 10px;
-}
-.deltag {
-
-  background-color: #111111;
-  border: none;
-  color: white;
-  border-radius: 10px;
-}
-.deltager {
-
-  background-color: white;
-  border: 2px solid black;
-  color: black;
-  border-radius: 10px;
-}
-
-#facbook_login_knap:hover {
-  opacity: .8;
-  cursor: pointer;
 }
 
 .icons {
@@ -166,10 +133,76 @@ h2 {
   box-shadow: 8px 10px 32px -11px rgba(0,0,0,0.93);
 }
 
-.logos {
-
-}
 
 .img-fluid {
   width: 100%;
 }
+
+
+
+.dark-icons {
+  background-color: #00454E;
+  color: #E3F1F0;
+  padding: 15px 5px;
+
+}
+
+.kodestykker {
+  background-color: lightgrey;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.spacing20 {
+  margin-left: 20px;
+}
+.spacing40 {
+  margin-left: 40px;
+}
+
+
+.btn-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 20vh;
+  list-style: none;
+
+}
+
+.btn-facebook {
+
+  background-color: #4267b2 !important;
+
+}
+
+.login-heading {
+  margin-top: 5%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  
+}
+
+.btn {
+  padding: 10px 90px;
+  box-shadow: 6px 9px 17px 0px rgba(0,0,0,0.75);
+  border-radius: 10px;
+  font-family: proxima-nova, sans-serif;
+  background-color: rgb(17, 17, 17);
+  font-size: 20px;
+  cursor: pointer;
+
+}
+
+.btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-small {
+  width: 8%;
+  margin: 0 auto;
+  border-radius: 100px;
+  font-size: 9px;
+}
+

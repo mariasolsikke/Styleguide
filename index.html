@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="da/en" dir="ltr">
 
 <head>
   <meta charset="utf-8">
   <link href="stylesheet.css" rel="stylesheet">
   <title> StyleGuide projekt 4 - team 2</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+    integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -12,7 +17,10 @@
   <h1> StyleGuide </h1>
   <p class="underoverskrift"> Team 2's styleguide for projekt 4: digital brugergrænseflade </p>
 
+
   <article class="container">
+
+    <!-- #region navigation -->
 
     <aside class="navbar">
       <h2>
@@ -48,7 +56,12 @@
       </h2>
     </aside>
 
+    <!-- #endregion -->
+
     <main>
+
+      <!-- #region farver -->
+
       <h2 id="farver"> Farver </h2>
       <div class="box box01">
 
@@ -98,6 +111,10 @@
 
       </div>
 
+      <!-- #endregion -->
+
+      <!-- #region typografi -->
+
       <h2 id="typografi"> Typografi </h2>
       <div class="box">
         <div>
@@ -124,28 +141,34 @@
 
       </div>
 
+      <!-- #endregion -->
 
       <h2 id="knapper"> Knapper </h2>
       <div class="box">
 
-        <div>
-          <button class="btn fa-login">Log ind med facebook</button>
-          <p> <span><</span>button class="btn fa-login"></button></p>
-        </div>
+        <section class="login-buttons">
 
-
-
-        <div>
-          <button class="btn deltag">Deltag</button>
-          <p> <span><</span>button class="btn deltag"></button></p>
-        </div>
-        <div>
-          <button class="btn deltager">Deltager</button>
-          <p> <span><</span>button class="btn deltager"></button></p>
-        </div>
-
-
+          <ul class="btn-list text-center">
+            <li class="btn btn-facebook">
+              <a href="#" >Facebook Login</a>
+              
+            </li>
+            <li class="btn">
+              <a href="#" >Login</a>
+              
+            </li>
+            <li class="btn btn-small">
+              <a href="#" >Small</a>
+              
+            </li>
+          </ul>
+          
+        </section>
+        
+        
       </div>
+
+      <!-- #region formular -->
 
       <h2 id="formular"> Formular </h2>
       <div class="box">
@@ -155,72 +178,123 @@
         <div>
           <input type="checkbox" placeholder="Adgangskode">
           <label for="agreements">Jeg har læst og accepteret brugerbetingelserne</label>
-
         </div>
+      </div>
 
+      <p class="kodestykker">
+        &lt;input type="text" placeholder="Navn" &gt;
+        <br>
+        &lt;input type="email" placeholder="Email" &gt;
+        <br>
+        &lt;input type="text" placeholder="Adgangskode" &gt;
+        <br>
+          &lt;input type="checkbox" placeholder="Adgangskode" &gt;
+          <br>
+          &lt;label for="agreements"&gt;Jeg har læst og accepteret brugerbetingelserne&lt;/label &gt;
+        
+      </p>
+
+      <!-- #endregion -->
+
+      <!-- #region navigation -->
+
+      <h2 id="navigation"> Navigation </h2>
+      <div class="box dark-icons">
+        <i class="fa fa-home fa-3x" aria-hidden="true"></i>
+        <i class="fa fa-book fa-3x" aria-hidden="true"></i>
+        <i class="fas fa-user-friends fa-3x" aria-hidden="true"></i>
+        <i class="fas fa-wine-glass-alt fa-3x" aria-hidden="true"></i>
 
       </div>
-      <p></p>
-      <h2 id="navigation"> Navigation </h2>
-      <p></p>
+
+      <p class="kodestykker">
+      &lt;nav&gt;
+      <br>
+       <span class="spacing20"></span> &lt;ul&gt;
+        <br>
+        <span class="spacing40"></span>
+          &lt;li class="list-item"&gt;
+            &lt;a href="" class="active">&lt;/a&gt;
+          &lt;/li&gt;
+          <br>
+          <span class="spacing40"></span>
+          &lt;li class="list-item">
+            &lt;a href="" class="active">&lt;/a&gt;
+          &lt;/li&gt;
+          <br>
+          <span class="spacing40"></span>
+          &lt;li class="list-item">
+            &lt;a href="" class="active">&lt;/a&gt;
+          &lt;/li&gt;
+          <br>
+          <span class="spacing40"></span>
+          &lt;li class="list-item">
+            &lt;a href="" class="active">&lt;/a&gt;
+          &lt;/li&gt;
+          <br>
+          <span class="spacing20"></span>  &lt;/ul&gt;
+        <br>
+      &lt;/nav&gt;
+      </p>
+
+<!-- #endregion -->
+
+<!-- #region logo -->
+
       <h2 id="logo"> Logo </h2>
       <figure>
-        <div class="logo et">
-        <figcaption class="logos">
-          <p> </p>
-          <img class="img-fluid" src="./logo1.png" alt="logo numero uno">
-        </figcaption>
+        <div class="logo">
+          <figcaption>
+            
+            <img class="img-fluid" src="./Logo1.png" alt="logo numero uno">
+          </figcaption>
         </div>
+        <p>kodetekst</p>
       </figure>
-      <p></p>
+
+      <!-- #endregion -->
+
+<!-- #region ikoner -->
+
       <h2 id="ikoner"> Ikoner </h2>
-      <p></p>
-      <div class= "icons">
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="27.418" height="21.321" viewBox="0 0 27.418 21.321">
-          <path id="Icon_awesome-home" data-name="Icon awesome-home" d="M13.345,7.785,4.569,15.013v7.8a.762.762,0,0,0,.762.762l5.334-.014a.762.762,0,0,0,.758-.762V18.244a.762.762,0,0,1,.762-.762H15.23a.762.762,0,0,1,.762.762V22.8a.762.762,0,0,0,.762.764l5.332.015a.762.762,0,0,0,.762-.762V15.007L14.073,7.785A.58.58,0,0,0,13.345,7.785ZM27.207,12.7l-3.979-3.28V2.825a.571.571,0,0,0-.571-.571H19.991a.571.571,0,0,0-.571.571V6.281L15.158,2.775a2.285,2.285,0,0,0-2.9,0L.206,12.7a.571.571,0,0,0-.076.8l1.214,1.476a.571.571,0,0,0,.8.078l11.2-9.222a.58.58,0,0,1,.728,0l11.2,9.222a.571.571,0,0,0,.8-.076L27.287,13.5a.571.571,0,0,0-.081-.806Z" transform="translate(0.001 -2.254)"/>
-          </svg>
-        </div>
+      <div class="box">
+        <i class="fa fa-home fa-3x" aria-hidden="true"></i>
+        <i class="fa fa-book fa-3x" aria-hidden="true"></i>
+        <i class="fas fa-user-friends fa-3x" aria-hidden="true"></i>
+        <i class="fas fa-wine-glass-alt fa-3x" aria-hidden="true"></i>
+        <i class="fa fa-cog fa-3x " aria-hidden="true"></i>
+        <i class="fa fa-arrow-left fa-3x" aria-hidden="true"></i>
 
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="21.324" height="24.37" viewBox="0 0 21.324 24.37">
-          <path id="Icon_awesome-book" data-name="Icon awesome-book" d="M21.324,17.135V1.142A1.14,1.14,0,0,0,20.181,0H4.569A4.571,4.571,0,0,0,0,4.569V19.8A4.571,4.571,0,0,0,4.569,24.37H20.181a1.14,1.14,0,0,0,1.142-1.142v-.762a1.151,1.151,0,0,0-.424-.89,10.615,10.615,0,0,1,0-3.556A1.134,1.134,0,0,0,21.324,17.135ZM6.093,6.378a.286.286,0,0,1,.286-.286H16.469a.286.286,0,0,1,.286.286V7.33a.286.286,0,0,1-.286.286H6.378a.286.286,0,0,1-.286-.286Zm0,3.046a.286.286,0,0,1,.286-.286H16.469a.286.286,0,0,1,.286.286v.952a.286.286,0,0,1-.286.286H6.378a.286.286,0,0,1-.286-.286Zm12.061,11.9H4.569a1.523,1.523,0,0,1,0-3.046H18.154A17.136,17.136,0,0,0,18.154,21.324Z"/>
-          </svg>
-        </div>
-
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="30.463" height="24.37" viewBox="0 0 30.463 24.37">
-          <path id="Icon_awesome-theater-masks" data-name="Icon awesome-theater-masks" d="M9.846,11.669A3.56,3.56,0,0,0,7.108,15.2a5.653,5.653,0,0,1,2.375-1.472ZM4.56,14.041,3.05,5.5a.236.236,0,0,1,.011-.126,18.585,18.585,0,0,1,9-2.333c.077,0,.154.008.231.009A4.571,4.571,0,0,1,14.744,1.81a23.146,23.146,0,0,1,2.722-.253A3.059,3.059,0,0,0,15.478.271,21.6,21.6,0,0,0,1.58,2.716,3.145,3.145,0,0,0,.05,6.025l1.51,8.544c.677,3.833,6.489,6.763,9.731,6.763a4.382,4.382,0,0,0,.476-.038,12.78,12.78,0,0,1-1.88-3.217C7.622,17.459,4.84,15.62,4.56,14.041ZM9.2,7.5a1.88,1.88,0,0,0-.194-.543,3,3,0,0,1-1.681.872,3,3,0,0,1-1.879-.246,1.871,1.871,0,0,0,0,.576A1.9,1.9,0,0,0,9.2,7.5ZM28.882,5.755a21.576,21.576,0,0,0-13.9-2.444A3.151,3.151,0,0,0,12.412,5.9L10.9,14.442c-.733,4.143,4.535,9.342,7.535,9.869s9.732-2.56,10.465-6.7l1.51-8.544a3.144,3.144,0,0,0-1.53-3.309ZM15.877,10.362a1.9,1.9,0,0,1,3.75.66,1.88,1.88,0,0,1-.194.543,3.161,3.161,0,0,0-3.56-.626,1.859,1.859,0,0,1,0-.576Zm3.354,9.461a5.073,5.073,0,0,1-4.238-5.374,7.837,7.837,0,0,0,4.735,2.56,7.85,7.85,0,0,0,5.328-.79,5.084,5.084,0,0,1-5.825,3.6Zm6.2-7.2a3.162,3.162,0,0,0-3.561-.626,1.871,1.871,0,0,1,0-.576,1.9,1.9,0,0,1,3.75.659,1.87,1.87,0,0,1-.194.543Z" transform="translate(0)"/>
-          </svg>
-        </div>
-
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="27.439" height="21.954" viewBox="0 0 27.439 21.954">
-          <path id="Icon_awesome-glass-cheers" data-name="Icon awesome-glass-cheers" d="M27.412,18.588a1.709,1.709,0,0,0-2.238-.926l-.947.394-1.659-4.369a5.02,5.02,0,0,0,1.479-6.551L20.333.684A1.376,1.376,0,0,0,18.619.1l-4.9,2.032L8.818.1A1.371,1.371,0,0,0,7.1.684L3.391,7.137A5.018,5.018,0,0,0,4.87,13.683L3.21,18.052l-.947-.394a1.71,1.71,0,0,0-2.238.926.344.344,0,0,0,.184.45l6.958,2.89a.339.339,0,0,0,.446-.184A1.719,1.719,0,0,0,6.687,19.5L5.74,19.1l1.689-4.442a5.082,5.082,0,0,0,.562.056,4.987,4.987,0,0,0,4.862-3.657l.866-3.233.866,3.233a4.987,4.987,0,0,0,4.862,3.657,5.082,5.082,0,0,0,.562-.056L21.692,19.1l-.947.394a1.715,1.715,0,0,0-.926,2.242.34.34,0,0,0,.446.184l6.962-2.89A.342.342,0,0,0,27.412,18.588ZM11.828,6.948,7.022,4.954,8.587,2.236l4.051,1.681Zm3.781,0L14.8,3.917,18.85,2.236l1.565,2.718L15.609,6.948Z" transform="translate(0.002 0.004)"/>
-          </svg>
-        </div>
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="8.041" height="13.831" viewBox="0 0 8.041 13.831">
-            <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back" d="M13.675,13.107,19,7.878a.973.973,0,0,0,0-1.4,1.022,1.022,0,0,0-1.424,0l-6.029,5.925a.975.975,0,0,0-.029,1.363l6.055,5.966a1.023,1.023,0,0,0,1.424,0,.973.973,0,0,0,0-1.4Z" transform="translate(-11.251 -6.194)"/>
-          </svg>
-        </div>
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
-            <path id="Icon_ionic-md-settings" data-name="Icon ionic-md-settings" d="M20.09,13.825a5.941,5.941,0,0,0,.048-.95c0-.333-.048-.617-.048-.95l2.04-1.567a.436.436,0,0,0,.1-.617L20.284,6.463a.473.473,0,0,0-.583-.19l-2.429.95a7.071,7.071,0,0,0-1.652-.95l-.34-2.517a.521.521,0,0,0-.486-.38H10.907a.521.521,0,0,0-.486.38l-.389,2.517a8.227,8.227,0,0,0-1.652.95l-2.429-.95a.455.455,0,0,0-.583.19L3.425,9.74a.574.574,0,0,0,.1.617l2.089,1.567c0,.333-.048.617-.048.95s.048.617.048.95l-2.04,1.567a.436.436,0,0,0-.1.617l1.943,3.278a.473.473,0,0,0,.583.19l2.429-.95a7.07,7.07,0,0,0,1.652.95L10.47,22a.471.471,0,0,0,.486.38h3.887a.521.521,0,0,0,.486-.38l.389-2.517a8.222,8.222,0,0,0,1.652-.95l2.429.95a.455.455,0,0,0,.583-.19l1.943-3.278a.573.573,0,0,0-.1-.617ZM12.851,16.2a3.326,3.326,0,1,1,3.4-3.325A3.343,3.343,0,0,1,12.851,16.2Z" transform="translate(-3.375 -3.375)"/>
-          </svg>
-
-        </div>
       </div>
 
-      <h2 id="formel"> Formel </h2>
-      <p></p>
+      <div class="box">
+        <p class="text-center">
+          &lt;i class="fa fa-home fa-3x" aria-hidden="true"&gt;&lt;/i&gt;
+        </p>
+        <p class="text-center">
+          &lt;i class="fa fa-book fa-3x" aria-hidden="true"&gt;&lt;/i&gt;
+        </p>
+        <p class="text-center">
+          &lt;i class="fa fa-user-friends fa-3x" aria-hidden="true"&gt;&lt;/i&gt;
+        </p>
+        <p class="text-center">
+          &lt;i class="fa fa-wine-glass-alt fa-3x" aria-hidden="true"&gt;&lt;/i&gt;
+        </p>
+        <p class="text-center">
+          &lt;i class="fa fa-cog fa-3x" aria-hidden="true"&gt;&lt;/i&gt;
+        </p>
+        <p class="text-center">
+          &lt;i class="fa fa-arrow-left" aria-hidden="true"&gt;&lt;/i&gt;
+        </p>
+      </div>
+      
+      <!-- #endregion -->
+
     </main>
 
   </article>
 
-  <footer>
-    <p> </p>
-  </footer>
+  
 
 
 </body>
