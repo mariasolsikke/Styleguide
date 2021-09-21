@@ -1,7 +1,25 @@
+* {
 
+  padding: 0;
+
+}
+
+/*
+@media screen and (min-width: 768px)
+ and (max-width: 1024px) {
+  body {
+    background-color: white;
+  }
+}
+ */
 
 /* #region heading */
+main {
+  width: 100%;
+}
+
 .container {
+  width: 100%;
 
   display: grid;
   grid-template-columns: 1fr 2fr 1fr 8fr 1fr;
@@ -47,11 +65,19 @@ h2 {
 .box {
   padding: 4px;
 
-
   display: flex;
+
   justify-content: space-evenly;
 
 }
+
+.box01 {
+
+  flex-wrap: wrap;
+
+
+}
+
 
 /* #region farve */
 
@@ -131,4 +157,19 @@ h2 {
 .icons {
   display: flex;
   justify-content: space-around ;
+}
+
+.logo {
+  height: 150px;
+  width: 150px;
+  border: 2px solid black;
+  box-shadow: 8px 10px 32px -11px rgba(0,0,0,0.93);
+}
+
+.logos {
+
+}
+
+.img-fluid {
+  width: 100%;
 }
