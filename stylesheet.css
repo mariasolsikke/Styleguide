@@ -82,6 +82,9 @@ h2 {
 .red {
   background-color: #BC2222;
 }
+.black {
+  background-color: #111111;
+}
 
 /* #endregion */
 
@@ -107,7 +110,7 @@ h2 {
 }
 .deltag {
 
-  background-color: black;
+  background-color: #111111;
   border: none;
   color: white;
   border-radius: 10px;
