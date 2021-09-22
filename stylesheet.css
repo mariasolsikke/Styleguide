@@ -7,6 +7,10 @@
 
 }
 
+body {
+  background-color: #E3F1F0;
+}
+
 .text-center {
   text-align: center;
 
@@ -49,15 +53,34 @@ h1 {
 
 h2 {
   text-align: left;
-  font-size: 25px;
+  font-size: 35px;
   color: Black;
   font-weight: 100;
-  font-family: Gill Sans, sans-serif;
+  font-family: proxima-nova, sans-serif;
+  
 }
 
 .navbar {
   grid-area: navbar;
+  
+}
 
+.navbar div {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: #D3D3D3;
+  
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #111111;
+}
+.navbar a:hover {
+  text-decoration: underline;
+  
 }
 
 .box {
@@ -127,10 +150,13 @@ h2 {
 }
 
 .logo {
-  height: 150px;
-  width: 150px;
-  border: 2px solid black;
-  box-shadow: 8px 10px 32px -11px rgba(0,0,0,0.93);
+  display: grid;
+  grid-template-columns: 3fr 2fr 1fr;
+  
+  align-items: flex-end;
+  
+
+  /* box-shadow: 8px 10px 32px -11px rgba(0,0,0,0.93); */
 }
 
 
@@ -206,3 +232,60 @@ h2 {
   font-size: 9px;
 }
 
+
+/* #region typografi */
+.overskrift-tekst {
+  font-size: 52px;
+  font-weight: 700;
+  font-family: proxima-nova, sans-serif;
+
+  margin-bottom: -10px;
+
+}
+
+.knap-tekst {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: proxima-nova, sans-serif;
+  
+  margin-bottom: -10px;
+
+}
+
+.fredagsbar-tekst {
+  font-size: 23px;
+  font-weight: 700;
+  font-family: proxima-nova, sans-serif;
+  
+  margin-bottom: -10px;
+
+}
+
+.begivenheder-tekst {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: proxima-nova, sans-serif;
+  
+  margin-bottom: -10px;
+
+}
+
+.brød-tekst {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: proxima-nova, sans-serif;
+  
+  margin-bottom: -10px;
+
+}
+
+.event-overskrift {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: proxima-nova, sans-serif;
+  
+  margin-bottom: -10px;
+
+}
+
+/* #endregion */
